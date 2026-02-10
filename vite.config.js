@@ -2,7 +2,7 @@ import {defineConfig} from "vite";
 import htmlInclude from "vite-plugin-html-include";
 
 export default defineConfig({
-    root: './src',
+    root: 'src',
     publicDir: '../public',
 
     server: {
@@ -12,7 +12,7 @@ export default defineConfig({
     },
 
     build: {
-        outDir: './dist',
+        outDir: '../dist',
         emptyOutDir: true,
         sourcemap: true,
 
@@ -44,10 +44,10 @@ export default defineConfig({
                     // Остальные ассеты (CSS, иконки и т.д.)
                     return 'assets/[name].[hash][extname]'
                 },
-                plugins: [
-                    htmlInclude()
-                ]
             }
         }
-    }
+    },
+    plugins: [
+        htmlInclude()
+    ]
 })
