@@ -1,5 +1,20 @@
 // ==== COLOR ====
+$color-white: rgb(255 255 255);
+$color-grey: rgb(137 157 157);
 
+/* the green palette */
+$color-green-400: rgb(186 226 73);
+$color-green-700: rgb(80 104 41);
+$color-green-900: rgb(29 47 48);
+$color-dark-cyan: rgb(11 25 25);
+
+/* background */
+$page-main-bg: $color-green-900;
+
+/* text */
+$text-main-color: $color-white;
+$text-on-dark-color: $color-grey;
+$text-on-light-color: $color-green-700;
 
 // ===== TYPOGRAPHY =====
 
