@@ -9,12 +9,17 @@ $color-green-900: rgb(29 47 48);
 $color-dark-cyan: rgb(11 25 25);
 
 /* background */
-$page-main-bg: $color-green-900;
+$element-main-bg: $color-green-900;
 
 /* text */
 $text-main-color: $color-white;
 $text-on-dark-color: $color-grey;
 $text-on-light-color: $color-green-700;
+
+/* link */
+$link-main: $color-white;
+$link-accent-primary: $color-green-400;
+$link-accent-secondary: $color-dark-cyan;
 
 // ===== TYPOGRAPHY =====
 

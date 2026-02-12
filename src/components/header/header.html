@@ -1,3 +1,35 @@
-<header class="header__main" role="banner">
-    <h1>{{$value}}</h1>
+<header class="header-main" role="banner">
+    <div class="header-main-content container">
+        <a href="#" class="header-main__link-logo">
+            <img src="./images/vector/logo.svg" width="65" height="20" alt="Логотип компании">
+        </a>
+        <nav class="header-main__nav">
+            <ul class="header-main__list-nav">
+                <li class="header-main__item-nav-link">
+                    <a class="header-main__link-nav" href="#">Каталог</a>
+                </li>
+                <li class="header-main__item-nav-link">
+                    <a class="header-main__link-nav" href="#">Галерея</a>
+                </li>
+                <li class="header-main__item-nav-link">
+                    <a class="header-main__link-nav" href="#">О лаборатории</a>
+                </li>
+                <li class="header-main__item-nav-link">
+                    <a class="header-main__link-nav" href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-main__actions">
+            <button class="header-main__button-search">
+                <svg width="24" height="24">
+                    <use href="./images/vector/header-search.svg#header-search"/>
+                </svg>
+            </button>
+            <a class="header-main__link-log-in">
+                <svg width="24" height="24">
+                    <use href="./images/vector/header-log-in.svg#header-log-in"/>
+                </svg>
+            </a>
+        </div>
+    </div>
 </header>

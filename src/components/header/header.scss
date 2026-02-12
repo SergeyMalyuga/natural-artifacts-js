@@ -1,0 +1,60 @@
+@use '../../styles/variables' as variables;
+
+.header-main {
+  background-color: variables.$element-main-bg;
+  padding: 18px 0;
+
+  &-content {
+    display: flex;
+  }
+
+  &__link {
+    &-logo {
+      display: block;
+      margin-right: 125px;
+
+      img {
+        display: block;
+      }
+    }
+
+    &-nav {
+      text-decoration: none;
+      display: block;
+      color: variables.$link-main;
+      font-family: variables.$font-family-primary;
+      font-style: normal;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  }
+
+  &__list {
+    &-nav {
+      display: flex;
+      gap: 64px;
+      align-items: center;
+    }
+  }
+
+  &__button-search, &__link-log-in {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    svg {
+      display: block;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 64px;
+    margin-left: auto;
+  }
+}

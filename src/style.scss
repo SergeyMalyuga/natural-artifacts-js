@@ -1,5 +1,6 @@
 @use './styles/variables' as variables;
 @use './styles/fonts';
+@use './components/header/header';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -12,6 +13,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
 ul {
   list-style: none;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
 }
 
 .container {
