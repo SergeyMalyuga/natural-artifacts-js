@@ -2,6 +2,7 @@
 @use '../../styles/abstracts/mixins' as mixins;
 
 .header-main {
+  position: relative;
   background-color: variables.$element-main-bg;
   padding: 18px 0;
 
@@ -16,6 +17,10 @@
 
       img {
         display: block;
+      }
+
+      @media (width <= 1024px) {
+        margin-right: 50px;
       }
     }
 
@@ -50,12 +55,81 @@
     }
   }
 
+  &__nav {
+    @media (width <= 768px) {
+      position: absolute;
+      justify-content: center;
+      width: 100%;
+      bottom: -40px;
+      left: 0;
+      background: brown;
+    }
+
+    @media (width <= 450px) {
+      display: none;
+    }
+  }
+
   &__list {
     &-nav {
       display: flex;
       gap: 64px;
       align-items: center;
+
+      @media (width <= 1024px) {
+        gap: 32px;
+      }
+
+      @media (width <= 768px) {
+        justify-content: center;
+      }
     }
+  }
+
+  &__button {
+    &-search {
+      @include mixins.interactive-colors(
+              $color-main: variables.$button-accent,
+              $color-hover: variables.$button-accent-hover,
+              $color-active: variables.$button-accent-active)
+    }
+
+    &-burger {
+      width: 24px;
+      height: 24px;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      display: none;
+      cursor: pointer;
+
+      &:hover {
+        span {
+          background-color: variables.$burger-line-hover;
+        }
+      }
+
+      &:active {
+        span {
+          background-color: variables.$burger-line-active;
+        }
+      }
+
+      @media (width <= 450px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: variables.$burger-line-color;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
   }
 
   &__button-search, &__link-log-in {
@@ -71,16 +145,13 @@
     }
   }
 
-  &__button-search {
-    @include mixins.interactive-colors(
-            $color-main: variables.$button-accent,
-            $color-hover: variables.$button-accent-hover,
-            $color-active: variables.$button-accent-active)
-  }
-
   &__actions {
     display: flex;
     gap: 64px;
     margin-left: auto;
+
+    @media (width <= 450px) {
+      gap: 32px
+    }
   }
 }
