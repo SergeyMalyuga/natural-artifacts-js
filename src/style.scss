@@ -30,6 +30,18 @@ body {
   margin: 0 auto;
 }
 
+.focus {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid variables.$focus;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

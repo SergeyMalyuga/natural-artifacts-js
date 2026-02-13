@@ -1,0 +1,11 @@
+@mixin interactive-colors($color-main, $color-hover, $color-active) {
+  color: $color-main;
+
+  &:hover {
+    color: $color-hover;
+  }
+
+  &:active {
+    color: $color-active;
+  }
+}
