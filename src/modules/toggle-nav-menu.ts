@@ -12,7 +12,7 @@ export class ToggleNavMenu {
         this.init();
     }
 
-    public toggle = () => {
+    private toggle = () => {
         this.isOpen = !this.isOpen;
         if (this.isOpen) {
             this.open();
@@ -21,8 +21,16 @@ export class ToggleNavMenu {
         }
     }
 
+    private onKeyDown = (evt: KeyboardEvent) => {
+        if(evt.key === 'Escape') {
+            this.close();
+            this.toggleBtn.focus();
+        }
+    }
+
     private init() {
         this.toggleBtn.addEventListener('click', this.toggle);
+        window.addEventListener('keydown', this.onKeyDown);
     }
 
     private open() {
