@@ -56,9 +56,10 @@
   }
 
   &__nav {
+    transition: transform 1s ease;
+
     @media (width <= 768px) {
       position: absolute;
-      justify-content: center;
       width: 100%;
       bottom: -40px;
       left: 0;
@@ -66,7 +67,19 @@
     }
 
     @media (width <= 450px) {
-      display: none;
+      position: fixed;
+      opacity: 0;
+      top: 76px;
+      left: 0;
+      height: min-content;
+      background: variables.$element-main-bg;
+      transform: translateX(-100%);
+      padding: 18px;
+
+      &--open {
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
   }
 
@@ -82,6 +95,10 @@
 
       @media (width <= 768px) {
         justify-content: center;
+      }
+
+      @media (width <= 450px) {
+        flex-direction: column;
       }
     }
   }
