@@ -15,7 +15,7 @@ $color-green-800: rgb(29 47 48);
 $color-dark-cyan: rgb(11 25 25);
 
 /* overlay */
-$overlay: color.scale($color-dark, $alpha: -60%);
+$overlay: color.scale($color-green-800, $alpha: -35%);
 
 /* background */
 $element-main-bg: $color-green-800;

@@ -2,6 +2,7 @@
 @use './styles/fonts';
 @use './components/header/header';
 @use './components/hero/hero';
+@use 'sass:map';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -44,6 +45,33 @@ body {
     outline: 1px solid variables.$focus;
     outline-offset: 3px;
     border-radius: 2px;
+  }
+}
+
+.link {
+  &__read-more {
+    display: flex;
+    width: min-content;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-family: variables.$font-family-primary;
+    font-size: 16px;
+    font-weight: map.get(variables.$font-weights, 'bold');
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+    transition: color 0.5s ease;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 44px;
+      height: 13px;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      transition: transform 0.5s ease, background-color 0.5s ease;
+    }
   }
 }
 
