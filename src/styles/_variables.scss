@@ -1,5 +1,8 @@
+@use 'sass:color';
+
 // ==== COLOR ====
 $color-white: rgb(255 255 255);
+$color-dark: rgb(0 0 0);
 $color-grey: rgb(137 157 157);
 
 /* the green palette */
@@ -11,6 +14,9 @@ $color-green-700: rgb(80 104 41);
 $color-green-800: rgb(29 47 48);
 $color-dark-cyan: rgb(11 25 25);
 
+/* overlay */
+$overlay: color.scale($color-dark, $alpha: -60%);
+
 /* background */
 $element-main-bg: $color-green-800;
 
@@ -18,6 +24,10 @@ $element-main-bg: $color-green-800;
 $text-main-color: $color-white;
 $text-on-dark-color: $color-grey;
 $text-on-light-color: $color-green-700;
+
+/* title */
+$title-main-color: $color-white;
+$title-accent-color: $color-green-800;
 
 /* link */
 $link-main: $color-white;

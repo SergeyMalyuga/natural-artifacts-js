@@ -63,7 +63,7 @@
       width: 100%;
       bottom: -40px;
       left: 0;
-      background: brown;
+      z-index: 10;
     }
 
     @media (width <= 450px) {
@@ -77,7 +77,6 @@
       padding: 18px;
 
       &--open {
-        transition: transform 1s ease, opacity 0s ease;
         transform: translateX(0);
         opacity: 1;
       }

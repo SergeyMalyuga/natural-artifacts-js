@@ -1,6 +1,7 @@
 @use './styles/variables' as variables;
 @use './styles/fonts';
 @use './components/header/header';
+@use './components/hero/hero';
 
 *, *::before, *::after {
   box-sizing: border-box;
