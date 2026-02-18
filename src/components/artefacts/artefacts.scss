@@ -1,5 +1,46 @@
 @use '../../styles/variables' as variables;
 
 .artefacts {
+  &__card {
+    &-artefact {
+      max-width: 255px;
+      width: 100%;
+    }
+  }
 
+  &__wrapper {
+    &-image {
+      position: relative;
+      width: 100%;
+      padding: 30px 16px;
+      background-color: variables.$card-image-bg-artefact;
+
+      &::before {
+        content: '1.2';
+        color: variables.$card-image-label-text;
+        font-family: variables.$font-family-secondary;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0%;
+        text-align: center;
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 16px;
+        left: 16px;
+        border: 1px solid variables.$card-image-label-border;
+        border-radius: 50%;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
+

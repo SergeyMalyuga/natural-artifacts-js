@@ -2,6 +2,7 @@
 @use './styles/fonts';
 @use './components/header/header';
 @use './components/hero/hero';
+@use './components/artefacts/artefacts';
 @use 'sass:map';
 
 *, *::before, *::after {
