@@ -18,7 +18,7 @@ $color-dark-cyan: rgb(11 25 25);
 $overlay: color.scale($color-green-800, $alpha: -35%);
 
 /* background */
-$element-main-bg: $color-green-800;
+$main-bg: $color-green-800;
 
 /* text */
 $text-main-color: $color-white;
@@ -41,6 +41,13 @@ $link-accent-primary-focus: $color-green-500;
 $link-accent-secondary: $color-dark-cyan;
 
 /* button */
+$button-main-text: $color-green-300;
+$button-main-hover-text: $color-dark-cyan;
+$button-main-border: $color-green-300;
+$button-main-hover: $color-green-300;
+$button-main-active: $color-green-600;
+$button-main-active-border: $color-green-600;
+$button-main-focus: $color-green-500;
 $button-accent: $color-green-300;
 $button-accent-hover: $color-green-400;
 $button-accent-active: $color-green-600;
@@ -56,6 +63,7 @@ $burger-line-active: $color-green-600;
 $card-image-bg-artefact: $color-dark-cyan;
 $card-image-label-border: $color-grey;
 $card-image-label-text: $color-grey;
+$card-border-color: $color-dark-cyan;
 
 // ===== TYPOGRAPHY =====
 

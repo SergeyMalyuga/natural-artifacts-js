@@ -24,6 +24,7 @@ html {
 
 body {
   margin: 0;
+  font-family: variables.$font-family-primary;
 }
 
 .container {
@@ -44,6 +45,18 @@ body {
 
   &:focus-visible {
     outline: 1px solid variables.$focus;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+.button-focus {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid variables.$button-main-focus;
     outline-offset: 3px;
     border-radius: 2px;
   }
