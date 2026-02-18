@@ -49,6 +49,10 @@
       text-align: left;
       color: variables.$title-main-color;
       margin-bottom: 16px;
+
+      @media (width <= 768px) {
+        font-size: 48px
+      }
     }
   }
 
@@ -63,6 +67,10 @@
       letter-spacing: 0%;
       text-align: left;
       margin-bottom: 24px;
+
+      @media (width <= 768px) {
+        display: none;
+      }
     }
   }
 
