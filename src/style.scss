@@ -4,6 +4,9 @@
 @use './components/hero/hero';
 @use './components/artefacts/artefacts';
 @use 'sass:map';
+@import '../node_modules/swiper/swiper.min.css';
+@import '../node_modules/swiper/modules/navigation.min.css';
+@import '../node_modules/swiper/modules/pagination.min.css';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -87,6 +90,50 @@ body {
       transition: transform 0.5s ease, background-color 0.5s ease;
     }
   }
+}
+
+.swiper {
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+.swiper-slide {
+  width: calc((100% - (3 * 30px)) / 4);
+}
+
+.swiper-pagination, .swiper-button-prev, .swiper-button-next {
+  position: static;
+}
+
+.swiper-button {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 13px;
+  background-color: variables.$swiper-button-bg;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+
+  &:hover {
+    background-color: variables.$swiper-button-hover-bg;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    background-color: variables.$swiper-button-focus-bg;
+  }
+}
+
+.swiper-button-prev {
+  mask-image: url('./images/vector/swiper-arrow-prev.svg');
+}
+
+.swiper-button-next {
+  mask-image: url('./images/vector/swiper-arrow-next.svg');
 }
 
 .visually-hidden {

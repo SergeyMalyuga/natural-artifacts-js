@@ -1,5 +1,6 @@
 import './style.scss';
 import {ToggleNavMenu} from "./modules/toggle-nav-menu.ts";
+import {AppSwiper} from "./modules/swiper.ts";
 
 document.addEventListener('DOMContentLoaded', () => {
     const headerNavMenu = document.querySelector('.header-main__nav') as HTMLElement;
@@ -10,5 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
         openClass: 'header-main__nav--open'
     });
 
-    window.addEventListener('beforeunload', () => navMenu.destroy())
+    const swiper = new AppSwiper();
+
+    window.addEventListener('beforeunload', () => {
+        navMenu.destroy();
+        swiper.destroy()
+    });
 })

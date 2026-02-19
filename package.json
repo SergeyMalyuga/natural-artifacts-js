@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/swiper": "^5.4.3",
     "prettier": "3.8.1",
     "sass-embedded": "^1.97.3",
     "stylelint": "^15.11.0",
@@ -18,5 +19,8 @@
     "vite-output": "^1.0.3",
     "vite-plugin-html-include": "^1.5.2",
     "vite-plugin-static-copy": "^3.2.0"
+  },
+  "dependencies": {
+    "swiper": "^12.1.2"
   }
 }
