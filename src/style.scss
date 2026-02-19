@@ -114,9 +114,15 @@ body {
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: cover;
+  margin: 0;
+  transition: background 0.5s ease;
 
   &:hover {
     background-color: variables.$swiper-button-hover-bg;
+  }
+
+  &:active {
+    background-color: variables.$swiper-button-active-bg;
   }
 
   &:focus {

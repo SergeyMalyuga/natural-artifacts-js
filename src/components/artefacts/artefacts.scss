@@ -2,14 +2,7 @@
 
 .artefacts {
   background-color: variables.$main-bg;
-
-  &__card {
-    &-artefact {
-      /*max-width: 255px;
-      width: 100%;*/
-
-    }
-  }
+  padding: 60px 0;
 
   &__wrapper {
     &-image {
@@ -104,6 +97,26 @@
         background-color: variables.$button-main-active;
         border-color: variables.$button-main-active-border;
       }
+    }
+  }
+
+  &__swiper {
+    &-controlls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 17px;
+    }
+
+    &-pagination {
+      color: variables.$text-main-color;
+      font-family: variables.$font-family-secondary;
+      font-style: normal;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: left;
     }
   }
 }

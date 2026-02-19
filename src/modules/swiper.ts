@@ -7,8 +7,8 @@ export class AppSwiper {
     }
 
     private swiper!: Swiper
-    private currentSlide = document.querySelector('.swiper-pagination-current') as HTMLElement;
-    private totalSlide = document.querySelector('.swiper-pagination-total') as HTMLElement;
+    private currentSlide = document.querySelector('.artefacts__swiper-pagination--current') as HTMLElement;
+    private totalSlide = document.querySelector('.artefacts__swiper-pagination--total') as HTMLElement;
 
     private init() {
         const element = document.querySelector('.swiper') as HTMLElement;
