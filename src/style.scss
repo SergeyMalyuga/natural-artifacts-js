@@ -105,6 +105,10 @@ body {
   position: static;
 }
 
+.swiper-pagination {
+  width: max-content !important;
+}
+
 .swiper-button {
   content: '';
   display: block;

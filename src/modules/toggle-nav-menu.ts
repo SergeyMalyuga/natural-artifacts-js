@@ -6,7 +6,6 @@ export class ToggleNavMenu {
     private readonly openClass: string;
 
     public constructor(private element: HTMLElement, option: NavMenuOptions) {
-        this.element = element;
         this.toggleBtn = option.toggleBtn;
         this.openClass = option.openClass;
         this.init();

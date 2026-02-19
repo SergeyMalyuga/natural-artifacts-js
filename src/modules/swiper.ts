@@ -2,13 +2,13 @@ import Swiper from "swiper";
 import {Navigation, Pagination} from "swiper/modules";
 
 export class AppSwiper {
+
     constructor() {
         this.init();
     }
 
     private swiper!: Swiper
-    private currentSlide = document.querySelector('.artefacts__swiper-pagination--current') as HTMLElement;
-    private totalSlide = document.querySelector('.artefacts__swiper-pagination--total') as HTMLElement;
+
 
     private init() {
         const element = document.querySelector('.swiper') as HTMLElement;
@@ -16,39 +16,48 @@ export class AppSwiper {
             this.swiper = new Swiper(element, {
                 modules: [Navigation, Pagination],
                 slidesPerView: 4,
+                observer: true,
+                observeParents: true,
                 spaceBetween: 30,
                 speed: 600,
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                    clickable: true,
+                    renderFraction: function (currentClass, totalClass) {
+                        return '<span class="' + currentClass + '"></span>' +
+                            '<span class="swiper-pagination-separator"> из </span>' +
+                            '<span class="' + totalClass + '"></span>';
+                    }
+                },
                 navigation: {
                     addIcons: false,
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
                 breakpoints: {
-                    0: {slidesPerView: 1},
+                    0: {
+                        slidesPerView: 1,
+                        pagination: {
+                            type: "bullets",
+                        },
+                    },
                     576: {
                         slidesPerView: 2,
                         pagination: {
-                            el: ".swiper-pagination",
-                            clickable: true,
-                        },
+                            type: "fraction",
+                        }
                     },
                     768: {slidesPerView: 3},
-                    1023: {slidesPerView: 4},
+                    1023: {
+                        slidesPerView: 4
+                    },
                 },
                 on: {
-                    init: (swiper) => {
-                        console.log(swiper.params.slidesPerView);
-                        console.log(swiper.slides.length);
-                        this.totalSlide.textContent = String(Number(swiper.slides.length) - Number(swiper.params.slidesPerView) + 1);
-                        this.currentSlide.textContent = String(swiper.activeIndex + 1)
-                    },
-                    slideChange: (swiper) => {
-                        this.currentSlide.textContent = String(swiper.activeIndex + 1);
-                    },
-                     resize: (swiper) => {
-                         this.totalSlide.textContent = String(Number(swiper.slides.length) - Number(swiper.params.slidesPerView) + 1);
-                         this.currentSlide.textContent = String(swiper.activeIndex + 1)
-                     }
+                    resize: (swiper) => {
+                        swiper.update();
+                        swiper.pagination.update();
+                    }
                 },
             })
         }
