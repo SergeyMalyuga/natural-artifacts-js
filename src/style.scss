@@ -39,6 +39,10 @@ body {
   @media (width <= 1024px) {
     padding: 0 32px;
   }
+
+  @media (width <= 768px) {
+    padding: 0 15px;
+  }
 }
 
 .focus {
@@ -145,6 +149,14 @@ body {
 .swiper-button-next {
   mask-image: url('./images/vector/swiper-arrow-next.svg');
 }
+
+
+.swiper-button-prev, .swiper-button-next {
+  @media (width <= 576px) {
+    display: none;
+  }
+}
+
 
 .visually-hidden {
   position: absolute;
