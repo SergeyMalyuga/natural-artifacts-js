@@ -1,4 +1,4 @@
 export interface NavMenuOptions {
-    toggleBtn: HTMLElement;
-    openClass: string;
+  toggleBtn: HTMLElement;
+  openClass: string;
 }

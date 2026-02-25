@@ -1,4 +1,4 @@
 export interface SwiperOptions {
-    currentSlide: HTMLElement;
-    totalSlide: HTMLElement;
+  currentSlide: HTMLElement;
+  totalSlide: HTMLElement;
 }

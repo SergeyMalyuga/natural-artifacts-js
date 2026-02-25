@@ -1,6 +1,8 @@
-import {createSlice} from "@reduxjs/toolkit";
+import artefactReducer from "./slices/artefactSlice.ts";
+import {configureStore} from "@reduxjs/toolkit";
 
-const initialState = {
-
+export const store = configureStore({
+reducer: {
+artefacts: artefactReducer
 }
-const slice = createSlice({})
+})

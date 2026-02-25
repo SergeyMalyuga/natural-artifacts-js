@@ -5,8 +5,8 @@ export default {
     "no-duplicate-selectors": [
       true,
       {
-        message: "Обнаружены дублирующиеся селекторы"
-      }
+        message: "Обнаружены дублирующиеся селекторы",
+      },
     ],
     "string-quotes": ["single"],
     "selector-class-pattern": [

@@ -1,5 +1,5 @@
-@use '../../styles/variables' as variables;
-@use '../../styles/abstracts/mixins' as mixins;
+@use "../../styles/variables" as variables;
+@use "../../styles/abstracts/mixins" as mixins;
 
 .header-main {
   position: relative;
@@ -48,15 +48,17 @@
 
     &-log-in {
       @include mixins.interactive-colors(
-              $color-main: variables.$link-accent-primary,
-              $color-hover: variables.$link-accent-primary-hover,
-              $color-active: variables.$link-accent-primary-active
-      )
+        $color-main: variables.$link-accent-primary,
+        $color-hover: variables.$link-accent-primary-hover,
+        $color-active: variables.$link-accent-primary-active
+      );
     }
   }
 
   &__nav {
-    transition: transform 1s ease, opacity 1s ease;
+    transition:
+      transform 1s ease,
+      opacity 1s ease;
 
     @media (width <= 768px) {
       position: absolute;
@@ -106,9 +108,10 @@
   &__button {
     &-search {
       @include mixins.interactive-colors(
-              $color-main: variables.$button-accent,
-              $color-hover: variables.$button-accent-hover,
-              $color-active: variables.$button-accent-active)
+        $color-main: variables.$button-accent,
+        $color-hover: variables.$button-accent-hover,
+        $color-active: variables.$button-accent-active
+      );
     }
 
     &-burger {
@@ -149,7 +152,8 @@
     cursor: pointer;
   }
 
-  &__button-search, &__link-log-in {
+  &__button-search,
+  &__link-log-in {
     display: block;
     background-color: transparent;
     border: none;
@@ -168,7 +172,7 @@
     margin-left: auto;
 
     @media (width <= 450px) {
-      gap: 32px
+      gap: 32px;
     }
   }
 }

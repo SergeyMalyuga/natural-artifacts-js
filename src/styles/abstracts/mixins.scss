@@ -10,11 +10,17 @@
   }
 }
 
-@mixin link-read-more($color-text, $color-bg, $color-hover, $color-active, $image) {
+@mixin link-read-more(
+  $color-text,
+  $color-bg,
+  $color-hover,
+  $color-active,
+  $image
+) {
   color: $color-bg;
 
   &::after {
-    background-color: $color-bg ;
+    background-color: $color-bg;
     mask-image: url($image);
   }
 
