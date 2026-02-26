@@ -1,4 +1,4 @@
-@use "../../styles/variables" as variables;
+@use '../../styles/variables' as variables;
 
 .artefacts {
   background-color: variables.$main-bg;
@@ -9,12 +9,12 @@
       position: relative;
       display: flex;
       justify-content: center;
-      width: 100%;
+      height: 180px;
       padding: 30px 16px;
       background-color: variables.$card-image-bg-artefact;
 
       &::before {
-        content: "1.2";
+        content: '1.2';
         color: variables.$card-image-label-text;
         font-family: variables.$font-family-secondary;
         font-style: normal;
@@ -35,11 +35,16 @@
 
       img {
         display: block;
+        max-width: 100%;
+        height: auto;
       }
     }
 
     &-info {
       padding: 16px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
       border: 1px solid variables.$card-border-color;
     }
   }
@@ -76,7 +81,7 @@
       width: 100%;
       background-color: transparent;
       padding: 10.5px 28.5px;
-      margin: 0 auto;
+      margin: auto auto 0;
       color: variables.$button-main-text;
       border: 1px solid variables.$button-main-border;
       font-family: variables.$font-family-primary;

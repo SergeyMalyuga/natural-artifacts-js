@@ -7,8 +7,8 @@ const initialState: ArtefactsState = {
         {
             image: {
                 url: "./images/raster/artefacts-plant.png",
-                height: 223,
-                width: 120,
+                height: 120,
+                width: 223,
             },
             title: "Fig. 1 (plant)",
             description:
@@ -18,8 +18,8 @@ const initialState: ArtefactsState = {
         {
             image: {
                 url: "./images/raster/artefacts-flower.png",
-                height: 197,
-                width: 120,
+                height: 120,
+                width: 197,
             },
             title: "Fig. 2 (flower)",
             description:
@@ -28,8 +28,8 @@ const initialState: ArtefactsState = {
         {
             image: {
                 url: "./images/raster/artefacts-leaf.png",
-                height: 204,
-                width: 120,
+                height: 120,
+                width: 204,
             },
             title: "Fig. 3 (leaf)",
             description:
@@ -38,12 +38,23 @@ const initialState: ArtefactsState = {
         {
             image: {
                 url: "./images/raster/artefacts-wood.png",
-                height: 226,
-                width: 120,
+                height: 120,
+                width: 226,
             },
             title: "Fig. 4 (wood)",
             description:
                 "Базовый вектор развития не даёт нам иного выбора, кроме определения новых предложений.",
+        },
+        {
+            image: {
+                url: "./images/raster/artefacts-plant.png",
+                height: 120,
+                width: 223,
+            },
+            title: "Fig. 1 (plant)",
+            description:
+                "Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира " +
+                "своевременно верифицированы.",
         },
     ],
     error: null,
