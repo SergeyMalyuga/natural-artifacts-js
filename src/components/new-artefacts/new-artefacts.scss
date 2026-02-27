@@ -1,8 +1,14 @@
 @use '../../styles/variables' as variables;
+@use '../../styles/abstracts/mixins' as mixins;
 @use 'sass:map';
 
 .new-artefacts {
   padding-bottom: 60px;
+
+  &__content {
+    display: flex;
+    gap: 30px;
+  }
 
   &__title {
     &-main {
@@ -16,17 +22,72 @@
       text-align: left;
       margin-bottom: 30px;
     }
+
+    &-info {
+      color: variables.$title-accent-color;
+      font-family: variables.$font-family-secondary;
+      font-style: normal;
+      font-weight: map.get(variables.$font-weights, 'bold');
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__text {
+    &-info {
+      color: variables.$text-on-light-color;
+      font-family: variables.$font-family-primary;
+      font-style: normal;
+      font-size: 16px;
+      font-weight: map.get(variables.$font-weights, 'regular');
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: left;
+
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
   }
 
   &__wrapper {
     &-image {
       max-width: 825px;
       width: 100%;
+      background-color: variables.$accent-bg-dark;
+      display: flex;
+      align-items: center;
 
       img {
         display: block;
         width: 100%;
         height: auto;
+      }
+    }
+
+    &-info {
+      max-width: 255px;
+      width: 100%;
+      background-color: variables.$accent-bg;
+      padding: 16px;
+    }
+  }
+
+  &__link {
+    &-info {
+      @include mixins.link-read-more(
+        $color-text: variables.$link-accent-secondary,
+        $color-bg: variables.$link-accent-secondary,
+        $color-hover: variables.$link-accent-primary-hover,
+        $color-active: variables.$link-accent-primary-active,
+        $image: './images/vector/link-arrow.svg'
+      );
+
+      &.link__read-more {
+        width: 100%;
       }
     }
   }
