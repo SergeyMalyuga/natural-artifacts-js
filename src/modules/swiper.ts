@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import {Navigation, Pagination} from "swiper/modules";
 
 export class AppSwiper {
   constructor() {

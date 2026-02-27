@@ -1,4 +1,4 @@
-@use '../../styles/variables' as variables;
+@use "../../styles/variables" as variables;
 
 .artefacts {
   background-color: variables.$main-bg;
@@ -14,7 +14,7 @@
       background-color: variables.$card-image-bg-artefact;
 
       &::before {
-        content: '1.2';
+        content: "1.2";
         color: variables.$card-image-label-text;
         font-family: variables.$font-family-secondary;
         font-style: normal;

@@ -1,4 +1,4 @@
-import { NavMenuOptions } from "../types/nav-menu-options.ts";
+import {NavMenuOptions} from "../types/nav-menu-options.ts";
 
 export class ToggleNavMenu {
   private isOpen = false;
