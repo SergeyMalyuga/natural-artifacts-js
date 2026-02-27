@@ -1,4 +1,17 @@
 @use '../../styles/variables' as variables;
+@use 'sass:map';
 
 .new-artefacts {
+  &__title {
+    &-main {
+      color: variables.$title-main-color;
+      font-family: variables.$font-family-secondary;
+      font-style: italic;
+      font-size: 48px;
+      font-weight: map.get(variables.$font-weights, 'bold');
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  }
 }

@@ -3,6 +3,7 @@
 @use './components/header/header';
 @use './components/hero/hero';
 @use './components/artefacts/artefacts';
+@use './components/new-artefacts/new-artefacts';
 @use 'sass:map';
 @import '../node_modules/swiper/swiper.min.css';
 @import '../node_modules/swiper/modules/navigation.min.css';
@@ -37,6 +38,7 @@ html {
 body {
   margin: 0;
   font-family: variables.$font-family-primary;
+  background-color: variables.$main-bg;
 }
 
 .container {
