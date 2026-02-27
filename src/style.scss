@@ -176,6 +176,15 @@ body {
   height: 100%;
 }
 
+.swiper-pagination-bullet {
+  background-color: variables.$swiper-bullet-bg;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: variables.$swiper-bullet-active-bg;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
