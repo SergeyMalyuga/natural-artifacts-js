@@ -1,4 +1,4 @@
-import {Artefact} from "./artefact.ts";
+import { Artefact } from './artefact.ts';
 
 export interface ArtefactsState {
   artefacts: Artefact[];

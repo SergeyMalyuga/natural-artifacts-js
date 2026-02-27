@@ -1,4 +1,4 @@
-@use "sass:color";
+@use 'sass:color';
 
 // ==== COLOR ====
 $color-white: rgb(255 255 255);
@@ -76,17 +76,17 @@ $swiper-bullet-bg: $color-dark-cyan;
 // ===== TYPOGRAPHY =====
 
 /* font-family */
-$font-family-primary: "Open Sans", sans-serif;
-$font-family-secondary: "Cormorant", serif;
+$font-family-primary: 'Open Sans', sans-serif;
+$font-family-secondary: 'Cormorant', serif;
 
 /* font-weights */
 $font-weights: (
-  "thin": 100,
-  "light": 300,
-  "regular": 400,
-  "medium": 500,
-  "semibold": 600,
-  "bold": 700,
-  "extrabold": 800,
-  "black": 900,
+  'thin': 100,
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'semibold': 600,
+  'bold': 700,
+  'extrabold': 800,
+  'black': 900,
 );

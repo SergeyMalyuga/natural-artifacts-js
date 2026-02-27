@@ -1,14 +1,14 @@
-@use "../../styles/variables" as variables;
-@use "../../styles/abstracts/mixins" as mixins;
-@use "sass:string";
-@use "sass:map";
+@use '../../styles/variables' as variables;
+@use '../../styles/abstracts/mixins' as mixins;
+@use 'sass:string';
+@use 'sass:map';
 
 .hero {
   position: relative;
   font-family: variables.$font-family-primary;
-  font-weight: map.get(variables.$font-weights, "regular");
+  font-weight: map.get(variables.$font-weights, 'regular');
   font-style: normal;
-  background-image: url("/images/raster/hero-bg.jpg");
+  background-image: url('/images/raster/hero-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +25,7 @@
   }
 
   &::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     width: 100%;
@@ -43,7 +43,7 @@
       font-family: variables.$font-family-secondary;
       font-style: normal;
       font-size: 60px;
-      font-weight: map.get(variables.$font-weights, "bold");
+      font-weight: map.get(variables.$font-weights, 'bold');
       line-height: 100%;
       letter-spacing: 0%;
       text-align: left;
@@ -81,7 +81,7 @@
         $color-bg: variables.$link-accent-primary,
         $color-hover: variables.$link-accent-primary-hover,
         $color-active: variables.$link-accent-primary-active,
-        $image: "./images/vector/link-arrow.svg"
+        $image: './images/vector/link-arrow.svg'
       );
     }
   }

@@ -1,4 +1,4 @@
-import {NavMenuOptions} from "../types/nav-menu-options.ts";
+import { NavMenuOptions } from '../types/nav-menu-options.ts';
 
 export class ToggleNavMenu {
   private isOpen = false;
@@ -24,15 +24,15 @@ export class ToggleNavMenu {
   };
 
   private onKeyDown = (evt: KeyboardEvent) => {
-    if (evt.key === "Escape") {
+    if (evt.key === 'Escape') {
       this.close();
       this.toggleBtn.focus();
     }
   };
 
   private init() {
-    this.toggleBtn.addEventListener("click", this.toggle);
-    window.addEventListener("keydown", this.onKeyDown);
+    this.toggleBtn.addEventListener('click', this.toggle);
+    window.addEventListener('keydown', this.onKeyDown);
   }
 
   private open() {
@@ -44,6 +44,6 @@ export class ToggleNavMenu {
   }
 
   public destroy() {
-    this.toggleBtn.removeEventListener("click", this.toggle);
+    this.toggleBtn.removeEventListener('click', this.toggle);
   }
 }

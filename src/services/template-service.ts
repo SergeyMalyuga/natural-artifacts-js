@@ -3,7 +3,7 @@ export class TemplateService {
   private templateCache: Document | null = null;
 
   private constructor(
-    private readonly templatePath: string = "templates.html",
+    private readonly templatePath: string = 'templates.html',
   ) {
     this.templatePath = templatePath;
   }
@@ -22,7 +22,7 @@ export class TemplateService {
     }
     const html = await response.text();
     const parser = new DOMParser();
-    this.templateCache = parser.parseFromString(html, "text/html");
+    this.templateCache = parser.parseFromString(html, 'text/html');
   }
 
   public async getTemplate(id: string) {

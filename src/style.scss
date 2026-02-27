@@ -1,12 +1,12 @@
-@use "./styles/variables" as variables;
-@use "./styles/fonts";
-@use "./components/header/header";
-@use "./components/hero/hero";
-@use "./components/artefacts/artefacts";
-@use "sass:map";
-@import "../node_modules/swiper/swiper.min.css";
-@import "../node_modules/swiper/modules/navigation.min.css";
-@import "../node_modules/swiper/modules/pagination.min.css";
+@use './styles/variables' as variables;
+@use './styles/fonts';
+@use './components/header/header';
+@use './components/hero/hero';
+@use './components/artefacts/artefacts';
+@use 'sass:map';
+@import '../node_modules/swiper/swiper.min.css';
+@import '../node_modules/swiper/modules/navigation.min.css';
+@import '../node_modules/swiper/modules/pagination.min.css';
 
 *,
 *::before,
@@ -87,14 +87,14 @@ body {
     text-decoration: none;
     font-family: variables.$font-family-primary;
     font-size: 16px;
-    font-weight: map.get(variables.$font-weights, "bold");
+    font-weight: map.get(variables.$font-weights, 'bold');
     line-height: 22px;
     letter-spacing: 0%;
     text-align: left;
     transition: color 0.5s ease;
 
     &::after {
-      content: "";
+      content: '';
       display: block;
       width: 44px;
       height: 13px;
@@ -128,7 +128,7 @@ body {
 }
 
 .swiper-button {
-  content: "";
+  content: '';
   display: block;
   width: 26px;
   height: 13px;
@@ -157,11 +157,11 @@ body {
 }
 
 .swiper-button-prev {
-  mask-image: url("./images/vector/swiper-arrow-prev.svg");
+  mask-image: url('./images/vector/swiper-arrow-prev.svg');
 }
 
 .swiper-button-next {
-  mask-image: url("./images/vector/swiper-arrow-next.svg");
+  mask-image: url('./images/vector/swiper-arrow-next.svg');
 }
 
 .swiper-button-prev,

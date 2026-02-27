@@ -1,5 +1,5 @@
-import Swiper from "swiper";
-import {Navigation, Pagination} from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
 export class AppSwiper {
   constructor() {
@@ -9,7 +9,7 @@ export class AppSwiper {
   private swiper!: Swiper;
 
   private init() {
-    const element = document.querySelector(".swiper") as HTMLElement;
+    const element = document.querySelector('.swiper') as HTMLElement;
     if (element) {
       this.swiper = new Swiper(element, {
         modules: [Navigation, Pagination],
@@ -19,8 +19,8 @@ export class AppSwiper {
         spaceBetween: 30,
         speed: 600,
         pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
+          el: '.swiper-pagination',
+          type: 'fraction',
           clickable: true,
           renderFraction: function (currentClass, totalClass) {
             return (
@@ -36,20 +36,20 @@ export class AppSwiper {
         },
         navigation: {
           addIcons: false,
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
         breakpoints: {
           0: {
             slidesPerView: 1,
             pagination: {
-              type: "bullets",
+              type: 'bullets',
             },
           },
           576: {
             slidesPerView: 2,
             pagination: {
-              type: "fraction",
+              type: 'fraction',
             },
           },
           768: { slidesPerView: 3 },

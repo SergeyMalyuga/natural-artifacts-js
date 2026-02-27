@@ -1,5 +1,5 @@
-import artefactReducer from "./slices/artefactSlice.ts";
-import {configureStore} from "@reduxjs/toolkit";
+import artefactReducer from './slices/artefactSlice.ts';
+import { configureStore } from '@reduxjs/toolkit';
 
 export const store = configureStore({
   reducer: {
