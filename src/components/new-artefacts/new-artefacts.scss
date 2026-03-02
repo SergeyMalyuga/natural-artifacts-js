@@ -3,7 +3,9 @@
 @use 'sass:map';
 
 .new-artefacts {
-  padding-bottom: 60px;
+  &.container {
+    padding-bottom: 60px;
+  }
 
   &__content {
     display: flex;
@@ -15,18 +17,6 @@
   }
 
   &__title {
-    &-main {
-      color: variables.$title-main-color;
-      font-family: variables.$font-family-secondary;
-      font-style: italic;
-      font-size: 48px;
-      font-weight: map.get(variables.$font-weights, 'bold');
-      line-height: 100%;
-      letter-spacing: 0%;
-      text-align: left;
-      margin-bottom: 30px;
-    }
-
     &-info {
       color: variables.$title-accent-color;
       font-family: variables.$font-family-secondary;
@@ -43,17 +33,6 @@
   &__text {
     &-info {
       color: variables.$text-on-light-color;
-      font-family: variables.$font-family-primary;
-      font-style: normal;
-      font-size: 16px;
-      font-weight: map.get(variables.$font-weights, 'regular');
-      line-height: 150%;
-      letter-spacing: 0%;
-      text-align: left;
-
-      &:not(:last-child) {
-        margin-bottom: 25px;
-      }
     }
   }
 

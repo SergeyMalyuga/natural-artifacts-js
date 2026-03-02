@@ -24,6 +24,7 @@ $accent-bg-dark: $color-dark-cyan;
 
 /* text */
 $text-main-color: $color-white;
+$text-accent-color: $color-dark-cyan;
 $text-on-dark-color: $color-grey;
 $text-on-light-color: $color-green-700;
 
@@ -50,6 +51,7 @@ $button-main-hover: $color-green-300;
 $button-main-active: $color-green-600;
 $button-main-active-border: $color-green-600;
 $button-main-focus: $color-green-500;
+$button-accent-text: $color-dark-cyan;
 $button-accent: $color-green-300;
 $button-accent-hover: $color-green-400;
 $button-accent-active: $color-green-600;
@@ -74,6 +76,10 @@ $swiper-button-active-bg: $color-green-600;
 $swiper-button-focus-bg: $color-green-500;
 $swiper-bullet-active-bg: $color-green-300;
 $swiper-bullet-bg: $color-dark-cyan;
+
+/* input */
+$input-hover-bg: $color-grey;
+$input-active-bg: color.scale($color-grey, $lightness: -10%);
 
 // ===== TYPOGRAPHY =====
 

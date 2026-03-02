@@ -1,8 +1,8 @@
 import './style.scss';
-import { ToggleNavMenu } from './modules/toggle-nav-menu.ts';
-import { AppSwiper } from './modules/swiper.ts';
-import { ArtefactListRenderer } from './modules/artefact-list-renderer.ts';
-import { store } from './store/store.ts';
+import {ToggleNavMenu} from './modules/toggle-nav-menu.ts';
+import {AppSwiper} from './modules/swiper.ts';
+import {ArtefactListRenderer} from './modules/artefact-list-renderer.ts';
+import {store} from './store/store.ts';
 
 document.addEventListener('DOMContentLoaded', async () => {
   try {
