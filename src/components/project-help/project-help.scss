@@ -1,0 +1,9 @@
+@use '../../styles/variables' as variables;
+
+.project-help {
+  padding: 60px 0;
+  background-image: url('/images/raster/project-help-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

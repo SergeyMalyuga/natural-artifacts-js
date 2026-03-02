@@ -4,6 +4,7 @@
 @use './components/hero/hero';
 @use './components/artefacts/artefacts';
 @use './components/new-artefacts/new-artefacts';
+@use './components/project-help/project-help';
 @use 'sass:map';
 @import '../node_modules/swiper/swiper.min.css';
 @import '../node_modules/swiper/modules/navigation.min.css';
