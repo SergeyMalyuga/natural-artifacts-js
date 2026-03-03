@@ -1,3 +1,33 @@
-.footer-main {
+@use '../../styles/variables' as variables;
 
+.footer-main {
+  background-color: variables.$accent-bg-dark;
+
+  svg {
+    display: block;
+  }
+
+  &__list {
+    &-social {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      padding: 22px 0;
+    }
+  }
+
+  &__link {
+    &-socil {
+      color: variables.$link-footer;
+      transition: color 0.5s ease;
+
+      &:hover {
+        color: variables.$link-footer-hover;
+      }
+
+      &:active {
+        color: variables.$link-footer-active;
+      }
+    }
+  }
 }
